@@ -1,0 +1,71 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background: #fff;
+}
+li{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+    cursor: pointer;
+    color: #333;
+}
+button{
+    border: none;
+    cursor: pointer;
+}
+/* toggler */
+.nav-toggle{
+    height: 30px;
+    width: 30px;
+    background: url('ham.png.png') no-repeat center center / cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 2;
+}
+/* close */
+.close{
+    height: 30px;
+    width: 30px;
+    background: url('close.png') no-repeat center center / cover;
+    position: absolute;
+    top: 30px;
+    left: 0px;
+    z-index: 2;
+}
+/* navbar */
+.navbar{
+    height: 100vh;
+    width: 50vh;
+    background: rgb(230, 230, 230);
+}
+/* links */
+.links{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    line-height: 5;
+}
+.links > li{
+    border-bottom: 0.1px solid #333;
+    width: 100%;
+    font-weight: 700;
+}
+.links > li > a{
+    padding: 20px 30px;
+    transition: all 0.2s ease-in-out;
+}
+.links > li :hover{
+    background: rgba(0, 0, 0, 0.1);
+}
+.links > li:nth-child(4){
+    border: none;
+}
